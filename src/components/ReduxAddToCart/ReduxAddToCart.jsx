@@ -1,5 +1,5 @@
 import {useDispatch, useSelector } from "react-redux";
-import ReduxAddToCart from ".";
+//import ReduxAddToCart from ".";
 function ReduxAddToCart({ product }) {
     console.log("add to cart", product.id)
     let dispatch = useDispatch();
