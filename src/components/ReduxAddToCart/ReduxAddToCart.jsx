@@ -10,7 +10,7 @@ function ReduxAddToCart({ product }) {
         dispatch({type:"REMOVE_FROM_CART",payload:product});
     }
     let quantity = useSelector((state) => {
-        return state.items[product.id]?.quantity || 0;
+        return state.cart.items[product.id]?.quantity || 0;
     })
 
     if (quantity === 0) {

@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 function Cart() {
-  const cartItems = useSelector(state => state.items || []); // Access cart items from Redux store
+  const cartItems = useSelector(state => state.cart.items || []); // Access cart items from Redux store
 
   if (!cartItems) {
     return <p>Loading cart items...</p>;
